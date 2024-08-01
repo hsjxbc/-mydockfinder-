@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(40, 48, 61);
+}
+.top{
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(to right, rgb(9, 43, 123),rgb(9, 76, 103));
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    animation: wai 2s forwards;
+    transform: translateY(-200px);
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+.toptext{
+    width: 15%;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+.language{
+    width: 15%;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    display: flex;
+    margin-left: auto;
+}
+.language1{
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.language1>a{
+    color: white;
+    text-decoration: none;
+    height: 60px;
+}
+.xian{
+    width: 80px;
+    background-color: white;
+    height: 2px;
+    margin: 2px auto;
+}
+.xian2{
+    width: 0px;
+    background-color: white;
+    height: 2px;
+    margin: 2px auto;
+    transition: all linear 0.3s;
+}
+.language2{
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.language2>a{
+    color: white;
+    text-decoration: none;
+    height: 60px;
+}
+.language2:hover .xian2{
+    width: 100px;
+}
+.backimg{
+    margin-top: 5px;
+    width: 100%;
+    height: 400px;
+    background: no-repeat url(./image/imageback.jpg);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: opacity 2.5s forwards; 
+    position: absolute;
+    top: 0px;
+
+}
+.backtext{
+    color: white;
+    font-size: 70px;
+    height: 150px;
+    text-align: center;
+    margin-top: 90px;
+   
+}
+.buttondown{
+    display: flex;
+    width: 300px;
+    height:100px;
+    margin: 10px auto;
+    
+    align-items: center;
+}
+.button{
+    width: 120px;
+    border: 1px solid white;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all linear 0.5s;
+}
+.button1{
+    margin-left: auto;
+    width: 120px;
+    border: 1px solid white;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all linear 0.5s;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+}
+.wai{
+    transform: translateY(-500px);
+    animation: wai 2.5s forwards; 
+    z-index: 2;
+}
+@keyframes wai{
+    to{
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+@keyframes opacity{
+    to{
+    opacity: 1;
+    }
+}
+.yanshi{
+
+    width:99%;
+    height: 4000px;
+    margin: 470px auto;
+}
+.y1{
+    width: 99%;
+    height:1400px;
+    box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    border-radius: 15px;
+} 
+.jieshao{
+    height: 250px;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.jieshao>span:nth-child(1){
+    font-size: 50px;
+    color: white;
+    height: 150px;
+    line-height: 200px;
+}
+.jieshao>span:nth-child(2){
+    font-size: 25px;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+.video{
+    margin: 10px auto;
+    width: 90%;
+    z-index: 2;
+    opacity: 1s;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow:
+    0px 0.7px 4.1px rgba(0, 0, 0, 0.098),
+    0px 1.7px 9.9px rgba(0, 0, 0, 0.141),
+    0px 3.3px 18.7px rgba(0, 0, 0, 0.175),
+    0px 5.8px 33.3px rgba(0, 0, 0, 0.209),
+    0px 10.9px 62.2px rgba(0, 0, 0, 0.252),
+    0px 26px 149px rgba(0, 0, 0, 0.35);
+}
+.video>video{
+    object-fit: fill;
+}
+
+#playbutton{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 80%;
+    margin: 10px auto;
+    /* background-color: rgba(0, 0, 0,0); */
+    background-color: transparent;
+    border: none;
+    left: 50%;    
+	top:50%;      
+	transform:translate(-50%,-50%);
+}
+/* 隐藏原生播放控件
+#myvideo::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  */
+
+  .come-in {
+    opacity: 1;
+    transform: translateY(150px);
+    animation: come-in 1s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 1s;
+  }
+  @keyframes come-in {
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .opaque {
+    opacity: 0;
+  }
+
+  #playbutton1{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 80%;
+    margin: 10px auto;
+    /* background-color: rgba(0, 0, 0,0); */
+    background-color: transparent;
+    border: none;
+    left: 50%;    
+	top:50%;      
+	transform:translate(-50%,-50%);
+}
